@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import MenuPreviewModal from './components/MenuPreviewModal';
 import BookingModal from './components/BookingModal';
 import Toast from './components/Toast';
+import WhatsAppButton from './components/WhatsAppButton';
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -78,6 +79,9 @@ export default function App() {
         initialItemName={selectedItemName}
         onShowToast={showToast}
       />
+
+      {/* Floating WhatsApp Action Button */}
+      <WhatsAppButton />
 
       {/* Floating Toast Notification */}
       <Toast toast={toast} onClose={() => setToast(null)} />

@@ -63,14 +63,29 @@ export default function ContactLocation({ onShowToast }) {
               </p>
             </div>
 
-            <a
-              href={`tel:${COMPANY_INFO.phoneRaw}`}
-              className="inline-flex items-center justify-center gap-2 w-full py-3.5 px-4 rounded-2xl font-bold text-base text-forest-900 bg-emerald-50 border border-emerald-200 hover:bg-emerald-500 hover:text-white hover:border-transparent transition-all duration-300 shadow-sm"
-              aria-label={`Call ${COMPANY_INFO.phone}`}
-            >
-              <Phone className="w-4 h-4" />
-              <span>{COMPANY_INFO.phone}</span>
-            </a>
+            <div className="flex flex-col gap-2.5">
+              <a
+                href={COMPANY_INFO.whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-2xl font-bold text-sm text-white bg-[#25D366] hover:bg-[#20ba59] transition-all duration-300 shadow-md shadow-[#25D366]/25 hover:-translate-y-0.5"
+                aria-label="Chat with Kane Mess on WhatsApp"
+              >
+                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.392-10.416c-4.288 0-7.777 3.489-7.777 7.777 0 1.37.357 2.658.98 3.778l-1.042 3.81 3.899-1.023c1.085.592 2.33 0.932 3.659.932 4.288 0 7.778-3.489 7.778-7.777 0-4.287-3.49-7.777-7.778-7.777zm0 17.554c-1.185 0-2.316-.312-3.303-.861l-.237-.132-2.453.643.655-2.393-.146-.233c-.604-.962-.924-2.078-.924-3.224 0-3.397 2.764-6.162 6.162-6.162 3.397 0 6.162 2.765 6.162 6.162 0 3.397-2.765 6.162-6.162 6.162z" />
+                </svg>
+                <span>Chat on WhatsApp</span>
+              </a>
+
+              <a
+                href={`tel:${COMPANY_INFO.phoneRaw}`}
+                className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-2xl font-bold text-xs text-forest-900 bg-emerald-50 border border-emerald-200 hover:bg-emerald-100 transition-all duration-300"
+                aria-label={`Call ${COMPANY_INFO.phone}`}
+              >
+                <Phone className="w-3.5 h-3.5 text-emerald-700" />
+                <span>Call: {COMPANY_INFO.phone}</span>
+              </a>
+            </div>
           </div>
 
           {/* Card 2: Physical Address */}

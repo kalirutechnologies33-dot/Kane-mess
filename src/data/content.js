@@ -4,6 +4,7 @@ export const COMPANY_INFO = {
   subTagline: "Experience the finest hotel mess catering, delivered fresh and on time.",
   phone: "+91 63749 31454",
   phoneRaw: "+916374931454",
+  whatsappUrl: "https://wa.me/916374931454?text=Hello%20Kane%20Mess,%20I%20would%20like%20to%20inquire%20about%20your%20catering%20and%20mess%20services.",
   address: "Kandampalayam Highway, Namakkal",
   email: "orders@kanemess.com",
   operatingHours: "Mon - Sun: 7:00 AM - 10:30 PM",
@@ -77,17 +78,17 @@ export const MENU_ITEMS = [
   {
     category: "Signature Thali",
     name: "Royal Kane Grand Thali",
-    price: "$14.99",
+    price: "₹180",
     tag: "Chef's Special",
-    desc: "Steaming Basmati rice, slow-cooked dal makhani, paneer butter masala, 3 butter rotis, seasonal vegetable dry curry, crisp papad, raita & gulab jamun.",
+    desc: "Steaming Basmati rice, slow-cooked dal makhani, paneer butter masala, 3 butter rotis, seasonal vegetable dry curry, crisp papad, raita & sweet payasam.",
     isVeg: true
   },
   {
     category: "Signature Thali",
-    name: "Special Homestyle Feast",
-    price: "$11.99",
+    name: "Special South Homestyle Feast",
+    price: "₹140",
     tag: "Daily Favorite",
-    desc: "Wholesome yellow tadka dal, seasonal subzi, phulkas with pure desi ghee, jeera rice, fresh pickle, and soothing spiced buttermilk.",
+    desc: "Aromatic Ponni boiled rice, sambar, rasam, kootu, poriyal, curd, appalam, fresh pickle, and soothing spiced buttermilk.",
     isVeg: true
   },
   {
@@ -95,15 +96,15 @@ export const MENU_ITEMS = [
     name: "Banquet Feast Spread",
     price: "Custom per plate",
     tag: "Events & Functions",
-    desc: "Multi-course gourmet extravaganza with 4 welcome drinks, 6 starters, 8 main dishes, artisan breads, live dessert stations, and signature paan.",
+    desc: "Multi-course gourmet extravaganza with welcome drinks, starters, live counters, authentic biryani, traditional curries, breads, sweets & ice cream.",
     isVeg: false
   },
   {
     category: "Daily Mess",
     name: "Monthly Executive Lunch Box",
-    price: "$180 / month",
+    price: "₹3,200 / month",
     tag: "Popular Plan",
-    desc: "26 healthy, nutritious lunch deliveries crafted for working professionals. Balanced proteins, low-sodium, delivered right to your office by 12:45 PM.",
+    desc: "26 healthy, nutritious lunch deliveries crafted for working professionals. Balanced proteins, low-sodium, delivered right to your office on time.",
     isVeg: true
   }
 ];
