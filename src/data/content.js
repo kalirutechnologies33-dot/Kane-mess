@@ -9,7 +9,7 @@ export const COMPANY_INFO = {
   email: "orders@kanemess.com",
   operatingHours: "Mon - Sun: 7:00 AM - 10:30 PM",
   mapsUrl: "https://www.google.com/maps/search/?api=1&query=11.2707184,77.9467251",
-  googleMapsEmbed: "https://maps.google.com/maps?q=11.2707184,77.9467251(Kane%20Mess)&hl=en&z=17&output=embed"
+  googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.8953158019316!2d77.9441502!3d11.2707184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDE2JzE0LjYiTiA3N8KwNTYnNDguMiJF!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
 };
 
 export const PROMISES = [

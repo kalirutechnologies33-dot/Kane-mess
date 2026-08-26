@@ -146,15 +146,30 @@ export default function ContactLocation({ onShowToast }) {
               <span className="text-xs text-emerald-700 font-bold font-display">Kandampalayam, Namakkal</span>
             </div>
 
-            <div className="relative flex-1 w-full rounded-2xl overflow-hidden bg-emerald-50 border border-emerald-100 flex items-center justify-center">
-              {/* Stylized Google Map Frame */}
+            <div className="relative flex-1 w-full rounded-2xl overflow-hidden bg-emerald-50 border border-emerald-100 flex flex-col items-center justify-center min-h-[320px]">
+              {/* Google Map Frame */}
               <iframe
-                title="Kane Mess Location"
+                title="Kane Mess Kandampalayam Namakkal Location"
                 src={COMPANY_INFO.googleMapsEmbed}
-                className="w-full h-full min-h-[320px] border-0"
+                className="w-full h-full min-h-[320px] flex-1 border-0"
+                allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />
+            </div>
+
+            {/* Direct Navigation Button Strip */}
+            <div className="pt-3 flex items-center justify-between gap-3 px-1">
+              <span className="text-[11px] text-forest-700 font-medium">Kandampalayam Highway (SH86)</span>
+              <a
+                href={COMPANY_INFO.mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-forest-900 hover:bg-emerald-600 text-white text-xs font-bold font-display transition-colors shadow-sm"
+              >
+                <Navigation className="w-3.5 h-3.5" />
+                <span>Get Directions</span>
+              </a>
             </div>
           </div>
 
