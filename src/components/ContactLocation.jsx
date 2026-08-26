@@ -143,7 +143,7 @@ export default function ContactLocation({ onShowToast }) {
                 <div className="w-3 h-3 rounded-full bg-emerald-500 animate-ping" />
                 <span className="text-xs font-bold text-forest-900">Live Kitchen Location</span>
               </div>
-              <span className="text-xs text-forest-700/70 font-medium">Food District Central</span>
+              <span className="text-xs text-emerald-700 font-bold">Kandampalayam, Namakkal</span>
             </div>
 
             <div className="relative flex-1 w-full rounded-2xl overflow-hidden bg-emerald-50 border border-emerald-100 flex items-center justify-center">

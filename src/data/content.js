@@ -9,7 +9,7 @@ export const COMPANY_INFO = {
   email: "orders@kanemess.com",
   operatingHours: "Mon - Sun: 7:00 AM - 10:30 PM",
   mapsUrl: "https://www.google.com/maps/search/?api=1&query=11.2707184,77.9467251",
-  googleMapsEmbed: "https://maps.google.com/maps?q=11.2707184,77.9467251&hl=en&z=17&output=embed"
+  googleMapsEmbed: "https://maps.google.com/maps?q=11.2707184,77.9467251(Kane%20Mess)&hl=en&z=17&output=embed"
 };
 
 export const PROMISES = [
