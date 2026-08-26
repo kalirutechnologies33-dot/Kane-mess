@@ -24,7 +24,7 @@ export default function MenuPreviewModal({ isOpen, onClose, onOpenBooking }) {
               <Utensils className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="text-xl font-serif font-bold text-white">Kane Mess Authentic Menu</h3>
+              <h3 className="text-xl font-display font-bold text-white">Kane Mess Authentic Menu</h3>
               <p className="text-xs text-emerald-300">Fresh daily preparations & bespoke catering menus</p>
             </div>
           </div>
@@ -44,7 +44,7 @@ export default function MenuPreviewModal({ isOpen, onClose, onOpenBooking }) {
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`px-4 py-2 rounded-xl text-xs font-bold transition-all duration-200 ${
+              className={`px-4 py-2 rounded-xl text-xs font-bold font-display transition-all duration-200 ${
                 activeCategory === cat
                   ? 'bg-emerald-500 text-white shadow-sm shadow-emerald-500/30'
                   : 'bg-white text-forest-900 border border-emerald-100 hover:bg-emerald-50'
@@ -65,15 +65,15 @@ export default function MenuPreviewModal({ isOpen, onClose, onOpenBooking }) {
               >
                 <div>
                   <div className="flex items-center justify-between gap-2 mb-2">
-                    <span className="text-[10px] font-extrabold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800">
+                    <span className="text-[10px] font-extrabold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-display">
                       {item.tag}
                     </span>
-                    <span className="text-sm font-bold text-forest-900 bg-forest-50 px-2.5 py-0.5 rounded-md border border-forest-100">
+                    <span className="text-sm font-bold text-forest-900 bg-forest-50 px-2.5 py-0.5 rounded-md border border-forest-100 font-display">
                       {item.price}
                     </span>
                   </div>
 
-                  <h4 className="text-base font-serif font-bold text-forest-900 mb-1.5 flex items-center gap-1.5">
+                  <h4 className="text-base font-display font-bold text-forest-900 mb-1.5 flex items-center gap-1.5">
                     {item.name}
                   </h4>
 

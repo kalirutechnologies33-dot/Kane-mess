@@ -49,11 +49,11 @@ export default function Navbar({ onOpenBooking, onOpenMenu }) {
             </div>
             
             <div className="flex flex-col">
-              <span className="text-2xl font-serif font-extrabold tracking-tight text-forest-900 group-hover:text-emerald-700 transition-colors">
+              <span className="text-2xl font-display font-extrabold tracking-tight text-forest-900 group-hover:text-emerald-700 transition-colors">
                 Kane Mess
               </span>
-              <span className="text-[10px] font-semibold uppercase tracking-widest text-emerald-600 -mt-1">
-                Hotel Mess & Catering
+              <span className="text-[10px] font-semibold uppercase tracking-widest text-emerald-700 -mt-1">
+                Hotel Mess & Catering • Namakkal
               </span>
             </div>
           </a>

@@ -55,7 +55,7 @@ export default function BookingModal({ isOpen, onClose, initialType = 'catering'
               <UtensilsCrossed className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="text-xl font-serif font-bold text-white">Book a Function / Catering</h3>
+              <h3 className="text-xl font-display font-bold text-white">Book a Function / Catering</h3>
               <p className="text-xs text-emerald-300">Customized multi-course menus & on-time service</p>
             </div>
           </div>
@@ -76,7 +76,7 @@ export default function BookingModal({ isOpen, onClose, initialType = 'catering'
               <div className="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto shadow-inner">
                 <CheckCircle2 className="w-10 h-10" />
               </div>
-              <h4 className="text-2xl font-serif font-bold text-forest-900">Request Confirmed!</h4>
+              <h4 className="text-2xl font-display font-bold text-forest-900">Request Confirmed!</h4>
               <p className="text-sm text-forest-800/80 max-w-sm mx-auto">
                 We have registered your catering request. Our executive planner will reach you at{' '}
                 <strong className="text-emerald-700">{formData.phone || 'your phone number'}</strong> to schedule menu tastings and provide an itemized quote.

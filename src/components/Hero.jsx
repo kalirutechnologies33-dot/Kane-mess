@@ -13,16 +13,16 @@ export default function Hero({ onOpenBooking, onOpenMenu }) {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         
         {/* Floating Top Pill Badge */}
-        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-emerald-50 border border-emerald-200/80 text-forest-900 shadow-sm shadow-emerald-100/50 mb-8 animate-float-slow">
+        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-emerald-50 border border-emerald-200 text-forest-900 shadow-sm mb-8 animate-float-slow">
           <span className="flex h-2 w-2 rounded-full bg-emerald-500 animate-ping"></span>
-          <span className="text-xs font-bold tracking-wide uppercase text-emerald-800 flex items-center gap-1.5">
+          <span className="text-xs font-bold tracking-wide uppercase text-emerald-800 flex items-center gap-1.5 font-display">
             <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
-            Premier Hotel Mess & Bespoke Event Catering
+            Authentic South Indian Homestyle Cooking & Grand Catering
           </span>
         </div>
 
         {/* Main Headline */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-black text-forest-900 tracking-tight leading-[1.15] mb-6">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-black text-forest-900 tracking-tight leading-[1.12] mb-6">
           Authentic Taste, <br className="hidden sm:block" />
           <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-forest-900 via-emerald-800 to-emerald-600">
             Uncompromising Quality.
@@ -43,7 +43,7 @@ export default function Hero({ onOpenBooking, onOpenMenu }) {
           {/* Outline Green CTA */}
           <button
             onClick={onOpenMenu}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-2xl font-bold text-base text-forest-900 bg-white border-2 border-emerald-600 hover:bg-emerald-50/70 hover:border-emerald-700 transition-all duration-300 shadow-md shadow-emerald-500/10 hover:-translate-y-1 active:translate-y-0"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-2xl font-bold text-base text-forest-900 bg-white border-2 border-emerald-600 hover:bg-emerald-50/70 hover:border-emerald-700 transition-all duration-300 shadow-md shadow-emerald-500/10 hover:-translate-y-1 active:translate-y-0 font-display"
           >
             <BookOpen className="w-5 h-5 text-emerald-600" />
             <span>Explore Menu</span>
@@ -52,7 +52,7 @@ export default function Hero({ onOpenBooking, onOpenMenu }) {
           {/* Solid Green CTA */}
           <button
             onClick={() => onOpenBooking('catering')}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-2xl font-bold text-base text-white bg-emerald-500 hover:bg-emerald-600 transition-all duration-300 shadow-xl shadow-emerald-500/25 hover:shadow-emerald-500/40 hover:-translate-y-1 active:translate-y-0"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-2xl font-bold text-base text-white bg-emerald-500 hover:bg-emerald-600 transition-all duration-300 shadow-xl shadow-emerald-500/25 hover:shadow-emerald-500/40 hover:-translate-y-1 active:translate-y-0 font-display"
           >
             <CalendarDays className="w-5 h-5 text-emerald-100" />
             <span>Book a Function</span>
@@ -68,7 +68,7 @@ export default function Hero({ onOpenBooking, onOpenMenu }) {
                 <ShieldCheck className="w-6 h-6" />
               </div>
               <div>
-                <h4 className="text-sm font-bold text-forest-900">100% Pure Spices</h4>
+                <h4 className="text-sm font-bold text-forest-900 font-display">100% Pure Spices</h4>
                 <p className="text-xs text-forest-700/80 mt-0.5">Cold-pressed oils & fresh farm produce</p>
               </div>
             </div>
@@ -78,7 +78,7 @@ export default function Hero({ onOpenBooking, onOpenMenu }) {
                 <Award className="w-6 h-6" />
               </div>
               <div>
-                <h4 className="text-sm font-bold text-forest-900">Master Recipes</h4>
+                <h4 className="text-sm font-bold text-forest-900 font-display">Master Recipes</h4>
                 <p className="text-xs text-forest-700/80 mt-0.5">Time-tested authentic culinary secrets</p>
               </div>
             </div>
@@ -88,7 +88,7 @@ export default function Hero({ onOpenBooking, onOpenMenu }) {
                 <HeartHandshake className="w-6 h-6" />
               </div>
               <div>
-                <h4 className="text-sm font-bold text-forest-900">Guaranteed Timely</h4>
+                <h4 className="text-sm font-bold text-forest-900 font-display">Guaranteed Timely</h4>
                 <p className="text-xs text-forest-700/80 mt-0.5">Arrives piping hot right on the clock</p>
               </div>
             </div>
@@ -100,7 +100,7 @@ export default function Hero({ onOpenBooking, onOpenMenu }) {
         <div className="mt-16 pt-10 border-t border-emerald-100/80 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           {STATS.map((stat, idx) => (
             <div key={idx} className="group">
-              <p className="text-2xl sm:text-3xl lg:text-4xl font-serif font-extrabold text-forest-900 group-hover:text-emerald-600 transition-colors">
+              <p className="text-2xl sm:text-3xl lg:text-4xl font-display font-black text-forest-900 group-hover:text-emerald-600 transition-colors">
                 {stat.value}
               </p>
               <p className="text-xs sm:text-sm font-medium text-forest-700/80 mt-1">

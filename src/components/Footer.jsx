@@ -20,7 +20,7 @@ export default function Footer({ onOpenMenu, onOpenBooking }) {
               <div className="w-10 h-10 rounded-2xl bg-forest-900 flex items-center justify-center text-emerald-400 shadow-sm animate-float">
                 <Utensils className="w-5 h-5 text-emerald-400" />
               </div>
-              <span className="text-2xl font-serif font-extrabold text-forest-900 tracking-tight">
+              <span className="text-2xl font-display font-extrabold text-forest-900 tracking-tight">
                 Kane Mess
               </span>
             </div>

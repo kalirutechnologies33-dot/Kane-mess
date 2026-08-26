@@ -12,11 +12,11 @@ export default function Services({ onOpenBooking, onOpenMenu }) {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-emerald-800 text-xs font-bold uppercase tracking-wider mb-4 border border-emerald-200 shadow-sm">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-emerald-800 text-xs font-bold uppercase tracking-wider mb-4 border border-emerald-200 shadow-sm font-display">
             <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
             Comprehensive Hospitality
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-black text-forest-900 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-black text-forest-900 tracking-tight">
             What We Offer
           </h2>
           <p className="mt-4 text-base sm:text-lg text-forest-800/80 leading-relaxed">
@@ -35,13 +35,13 @@ export default function Services({ onOpenBooking, onOpenMenu }) {
                 <div className="w-16 h-16 rounded-2xl bg-forest-900 text-emerald-400 flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform duration-300">
                   <UtensilsCrossed className="w-8 h-8" />
                 </div>
-                <span className="px-4 py-1.5 rounded-full text-xs font-bold bg-emerald-50 text-emerald-800 border border-emerald-200">
+                <span className="px-4 py-1.5 rounded-full text-xs font-bold bg-emerald-50 text-emerald-800 border border-emerald-200 font-display">
                   Weddings • Birthdays • Corporate
                 </span>
               </div>
 
               {/* Title */}
-              <h3 className="text-2xl sm:text-3xl font-serif font-bold text-forest-900 mb-3">
+              <h3 className="text-2xl sm:text-3xl font-display font-bold text-forest-900 mb-3">
                 Function & Event Catering
               </h3>
 
@@ -80,7 +80,7 @@ export default function Services({ onOpenBooking, onOpenMenu }) {
 
               <button
                 onClick={() => onOpenBooking('catering')}
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-2xl font-bold text-sm text-white bg-forest-900 hover:bg-emerald-600 transition-all duration-300 shadow-md hover:shadow-emerald-600/30 group-hover:translate-x-1"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-2xl font-bold text-sm text-white bg-forest-900 hover:bg-emerald-600 transition-all duration-300 shadow-md hover:shadow-emerald-600/30 group-hover:translate-x-1 font-display"
               >
                 <span>Book a Function</span>
                 <ArrowRight className="w-4 h-4" />
@@ -96,13 +96,13 @@ export default function Services({ onOpenBooking, onOpenMenu }) {
                 <div className="w-16 h-16 rounded-2xl bg-emerald-500 text-white flex items-center justify-center shadow-lg shadow-emerald-500/25 group-hover:scale-105 transition-transform duration-300">
                   <Truck className="w-8 h-8" />
                 </div>
-                <span className="px-4 py-1.5 rounded-full text-xs font-bold bg-forest-50 text-forest-900 border border-forest-200">
+                <span className="px-4 py-1.5 rounded-full text-xs font-bold bg-forest-50 text-forest-900 border border-forest-200 font-display">
                   Daily Homestyle & Office Meals
                 </span>
               </div>
 
               {/* Title */}
-              <h3 className="text-2xl sm:text-3xl font-serif font-bold text-forest-900 mb-3">
+              <h3 className="text-2xl sm:text-3xl font-display font-bold text-forest-900 mb-3">
                 Home Delivery & Mess Service
               </h3>
 
@@ -141,7 +141,7 @@ export default function Services({ onOpenBooking, onOpenMenu }) {
 
               <button
                 onClick={onOpenMenu}
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-2xl font-bold text-sm text-forest-900 bg-emerald-100 hover:bg-emerald-200 transition-all duration-300 shadow-sm group-hover:translate-x-1"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-2xl font-bold text-sm text-forest-900 bg-emerald-100 hover:bg-emerald-200 transition-all duration-300 shadow-sm group-hover:translate-x-1 font-display"
               >
                 <span>View Menu & Thalis</span>
                 <ArrowRight className="w-4 h-4 text-emerald-700" />

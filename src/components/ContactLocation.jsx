@@ -35,11 +35,11 @@ export default function ContactLocation({ onShowToast }) {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold uppercase tracking-wider mb-4 border border-emerald-200/60">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold uppercase tracking-wider mb-4 border border-emerald-200/60 font-display">
             <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
             Connect With Us
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-black text-forest-900 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-black text-forest-900 tracking-tight">
             Get in Touch
           </h2>
           <p className="mt-4 text-base sm:text-lg text-forest-800/80 leading-relaxed">
@@ -56,8 +56,8 @@ export default function ContactLocation({ onShowToast }) {
               <div className="w-16 h-16 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-5 shadow-sm group-hover:scale-110 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
                 <Phone className="w-7 h-7" />
               </div>
-              <span className="text-xs font-bold uppercase tracking-wider text-emerald-700 mb-1">Direct Call Line</span>
-              <h3 className="text-xl font-serif font-bold text-forest-900 mb-3">Phone & WhatsApp</h3>
+              <span className="text-xs font-bold uppercase tracking-wider text-emerald-700 mb-1 font-display">Direct Call Line</span>
+              <h3 className="text-xl font-display font-bold text-forest-900 mb-3">Phone & WhatsApp</h3>
               <p className="text-xs text-forest-700/80 mb-6">
                 Available daily from 7:00 AM - 10:30 PM for instant order placement & function consultations.
               </p>
@@ -68,7 +68,7 @@ export default function ContactLocation({ onShowToast }) {
                 href={COMPANY_INFO.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-2xl font-bold text-sm text-white bg-[#25D366] hover:bg-[#20ba59] transition-all duration-300 shadow-md shadow-[#25D366]/25 hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-2xl font-bold text-sm text-white bg-[#25D366] hover:bg-[#20ba59] transition-all duration-300 shadow-md shadow-[#25D366]/25 hover:-translate-y-0.5 font-display"
                 aria-label="Chat with Kane Mess on WhatsApp"
               >
                 <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
@@ -79,7 +79,7 @@ export default function ContactLocation({ onShowToast }) {
 
               <a
                 href={`tel:${COMPANY_INFO.phoneRaw}`}
-                className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-2xl font-bold text-xs text-forest-900 bg-emerald-50 border border-emerald-200 hover:bg-emerald-100 transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-2xl font-bold text-xs text-forest-900 bg-emerald-50 border border-emerald-200 hover:bg-emerald-100 transition-all duration-300 font-display"
                 aria-label={`Call ${COMPANY_INFO.phone}`}
               >
                 <Phone className="w-3.5 h-3.5 text-emerald-700" />
@@ -94,8 +94,8 @@ export default function ContactLocation({ onShowToast }) {
               <div className="w-16 h-16 rounded-2xl bg-forest-900 text-emerald-400 flex items-center justify-center mb-5 shadow-md group-hover:scale-110 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300">
                 <MapPin className="w-7 h-7" />
               </div>
-              <span className="text-xs font-bold uppercase tracking-wider text-emerald-700 mb-1">Visit Our Kitchen</span>
-              <h3 className="text-xl font-serif font-bold text-forest-900 mb-3">Kitchen & Dining</h3>
+              <span className="text-xs font-bold uppercase tracking-wider text-emerald-700 mb-1 font-display">Visit Our Kitchen</span>
+              <h3 className="text-xl font-display font-bold text-forest-900 mb-3">Kitchen & Dining</h3>
               <p className="text-xs text-forest-700/80 mb-6">
                 Step in for a hot meal or schedule a food tasting session with our executive chef.
               </p>
@@ -112,8 +112,8 @@ export default function ContactLocation({ onShowToast }) {
               <div className="w-16 h-16 rounded-2xl bg-emerald-500 text-white flex items-center justify-center mb-5 shadow-lg shadow-emerald-500/25 group-hover:scale-110 group-hover:bg-forest-900 group-hover:text-emerald-400 transition-all duration-300">
                 <Navigation className="w-7 h-7" />
               </div>
-              <span className="text-xs font-bold uppercase tracking-wider text-emerald-700 mb-1">Map & Directions</span>
-              <h3 className="text-xl font-serif font-bold text-forest-900 mb-3">Google Maps</h3>
+              <span className="text-xs font-bold uppercase tracking-wider text-emerald-700 mb-1 font-display">Map & Directions</span>
+              <h3 className="text-xl font-display font-bold text-forest-900 mb-3">Google Maps</h3>
               <p className="text-xs text-forest-700/80 mb-6">
                 Centrally situated with convenient parking and rapid delivery dispatch access.
               </p>
@@ -123,7 +123,7 @@ export default function ContactLocation({ onShowToast }) {
               href={COMPANY_INFO.mapsUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 w-full py-3.5 px-4 rounded-2xl font-bold text-sm text-white bg-emerald-500 hover:bg-emerald-600 transition-all duration-300 shadow-md shadow-emerald-500/20"
+              className="inline-flex items-center justify-center gap-2 w-full py-3.5 px-4 rounded-2xl font-bold text-sm text-white bg-emerald-500 hover:bg-emerald-600 transition-all duration-300 shadow-md shadow-emerald-500/20 font-display"
               aria-label="View on Google Maps"
             >
               <span>View on Google Maps</span>
@@ -141,13 +141,13 @@ export default function ContactLocation({ onShowToast }) {
             <div className="flex items-center justify-between px-3 py-2 mb-2">
               <div className="flex items-center gap-2">
                 <div className="w-3 h-3 rounded-full bg-emerald-500 animate-ping" />
-                <span className="text-xs font-bold text-forest-900">Live Kitchen Location</span>
+                <span className="text-xs font-bold text-forest-900 font-display">Live Kitchen Location</span>
               </div>
-              <span className="text-xs text-emerald-700 font-bold">Kandampalayam, Namakkal</span>
+              <span className="text-xs text-emerald-700 font-bold font-display">Kandampalayam, Namakkal</span>
             </div>
 
             <div className="relative flex-1 w-full rounded-2xl overflow-hidden bg-emerald-50 border border-emerald-100 flex items-center justify-center">
-              {/* Stylized Google Map Frame / Fallback Graphic */}
+              {/* Stylized Google Map Frame */}
               <iframe
                 title="Kane Mess Location"
                 src={COMPANY_INFO.googleMapsEmbed}
@@ -161,11 +161,11 @@ export default function ContactLocation({ onShowToast }) {
           {/* Quick Inquiry Form */}
           <div className="lg:col-span-6 floating-card bg-white rounded-3xl p-8 sm:p-10 border border-emerald-100/90 flex flex-col justify-between">
             <div>
-              <div className="flex items-center gap-2 text-emerald-700 text-xs font-bold uppercase tracking-wider mb-2">
+              <div className="flex items-center gap-2 text-emerald-700 text-xs font-bold uppercase tracking-wider mb-2 font-display">
                 <MessageSquare className="w-4 h-4" />
                 Fast Response Form
               </div>
-              <h3 className="text-2xl font-serif font-bold text-forest-900 mb-2">Send an Instant Inquiry</h3>
+              <h3 className="text-2xl font-display font-bold text-forest-900 mb-2">Send an Instant Inquiry</h3>
               <p className="text-xs text-forest-700/80 mb-6">
                 Fill in your details below and we will get back to you with custom menu options within 30 minutes.
               </p>
